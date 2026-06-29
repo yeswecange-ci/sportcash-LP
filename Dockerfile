@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1
 
-FROM php:8.3-cli AS app
+FROM php:8.4-cli AS app
 
 # Extensions PHP requises par Laravel (boot minimal pour une landing page sans BDD)
 RUN apt-get update \
