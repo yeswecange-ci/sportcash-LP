@@ -19,14 +19,14 @@
     <meta property="og:description" content="Avec SPORTCASH, chaque match devient une expérience unique. La première application 100 % ivoirienne pensée pour les passionnés de football.">
     <meta property="og:url" content="{{ url('/') }}">
     <meta property="og:locale" content="fr_FR">
-    <meta property="og:image" content="{{ url('/og-image.jpg') }}">
+    <meta property="og:image" content="{{ url('/logolonaci.png') }}">
     <meta property="og:image:alt" content="SportCash — Oser Gagner !">
 
     {{-- Twitter / X --}}
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="SportCash — Oser Gagner !">
     <meta name="twitter:description" content="Avec SPORTCASH, chaque match devient une expérience unique. La première application 100 % ivoirienne pensée pour les passionnés de football.">
-    <meta name="twitter:image" content="{{ url('/og-image.jpg') }}">
+    <meta name="twitter:image" content="{{ url('/logolonaci.png') }}">
 
     <link rel="icon" href="{{ url('/favicon.ico') }}" sizes="any">
     <style>
@@ -67,23 +67,12 @@
             text-align: center;
         }
 
-        .brand {
-            font-size: 36px;
-            font-weight: 800;
-            letter-spacing: -0.5px;
-            line-height: 1;
-            margin-bottom: 6px;
-        }
-
-        .brand .sport { color: #f1622d; }
-        .brand .cash { color: #1ea64a; }
-
-        .tagline {
-            color: var(--accent);
-            font-size: 13px;
-            font-style: italic;
-            font-weight: 600;
-            margin-bottom: 44px;
+        .logo {
+            display: block;
+            width: 240px;
+            max-width: 75%;
+            height: auto;
+            margin: 0 auto 44px;
         }
 
         .lead {
@@ -140,15 +129,14 @@
         }
 
         @media (min-width: 640px) {
-            .brand { font-size: 42px; }
+            .logo { width: 280px; }
             .lead { font-size: 18px; }
         }
     </style>
 </head>
 <body>
     <div class="wrap">
-        <div class="brand"><span class="sport">Sport</span><span class="cash">Cash</span></div>
-        <div class="tagline">Oser Gagner !</div>
+        <img src="{{ url('/logolonaci.png') }}" alt="SportCash — Osez Gagner !" class="logo">
 
         <div class="lead">
             <p>⚽ Avec <span class="highlight">SPORTCASH</span>, chaque match devient une expérience unique !</p>
