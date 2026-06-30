@@ -1,10 +1,34 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html lang="fr">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0d0d0d">
+
     <title>SportCash — Oser Gagner !</title>
-    <meta name="description" content="Avec SPORTCASH, chaque match devient une expérience unique. Téléchargez la première application 100 % ivoirienne pensée pour les passionnés de football.">
+    <meta name="description" content="Avec SPORTCASH, chaque match devient une expérience unique. Rejoignez la première application 100 % ivoirienne pensée pour les passionnés de football et téléchargez-la dès aujourd'hui.">
+    <meta name="keywords" content="SportCash, paris sportifs, football, Côte d'Ivoire, application mobile, paris en ligne, LONACI">
+    <meta name="author" content="SportCash">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="{{ url('/') }}">
+
+    {{-- Open Graph (Facebook, WhatsApp, LinkedIn…) --}}
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="SportCash">
+    <meta property="og:title" content="SportCash — Oser Gagner !">
+    <meta property="og:description" content="Avec SPORTCASH, chaque match devient une expérience unique. La première application 100 % ivoirienne pensée pour les passionnés de football.">
+    <meta property="og:url" content="{{ url('/') }}">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:image" content="{{ url('/og-image.jpg') }}">
+    <meta property="og:image:alt" content="SportCash — Oser Gagner !">
+
+    {{-- Twitter / X --}}
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="SportCash — Oser Gagner !">
+    <meta name="twitter:description" content="Avec SPORTCASH, chaque match devient une expérience unique. La première application 100 % ivoirienne pensée pour les passionnés de football.">
+    <meta name="twitter:image" content="{{ url('/og-image.jpg') }}">
+
+    <link rel="icon" href="{{ url('/favicon.ico') }}" sizes="any">
     <style>
         :root {
             --bg: #0d0d0d;
